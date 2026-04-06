@@ -1,20 +1,36 @@
+/* Czcionka i marginesy */
 body {
-    background-color: #f0fff0;
     font-family: Verdana, sans-serif;
-    color: #2e4d2e;
+    background-color: #f0fdf0;
     margin: 30px;
+    padding: 10px;
 }
 
+/* Zielone naglowki */
 h1, h2 {
-    color: #2e8b57;
-    border-bottom: 2px solid #2e8b57;
-    padding-bottom: 5px;
+    color: green;
+    border-bottom: 2px solid green;
 }
 
+/* Odstepy sekcji */
+section {
+    margin-bottom: 20px;
+}
+
+/* Ramka zdjecia */
 img {
-    border: 3px solid #2e8b57;
+    border: 3px solid green;
+    margin-top: 10px;
 }
 
+/* Kolor linkow */
 a {
-    color: #2e8b57;
+    color: green;
+}
+
+/* Stopka */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: green;
 }
