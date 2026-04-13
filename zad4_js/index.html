@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Furkan Akgun - CV</title>
-    <link rel="stylesheet" href="red.css">
+    <link id="theme-link" rel="stylesheet" href="red.css">
 </head>
 <body>
 
@@ -11,6 +11,12 @@
         <h1>Furkan Akgün</h1>
         <img src="profil.jpg" width="150" alt="Moje zdjęcie profilowe">
     </header>
+
+    <div style="margin: 20px 0;">
+            <button onclick="zmienMotyw('red')">Motyw Czerwony</button>
+            <button onclick="zmienMotyw('green')">Motyw Zielony</button>
+            <button onclick="toggleSekcja()">Pokaż/Ukryj Projekty</button>
+    </div>
 
     <main>
         <section>
@@ -59,7 +65,7 @@
             <p>Rok I, semestr II</p>
         </section>
 
-        <section>
+        <section id="sekcja-projekty">
             <h2>Projekty</h2>
             <ul>
                 <li>Prosty kalkulator w języku C#</li>
@@ -72,6 +78,8 @@
         <hr>
         <p>Furkan Akgün | Numer indeksu: 75729 | 2026</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
