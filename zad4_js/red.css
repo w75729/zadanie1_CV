@@ -1,0 +1,36 @@
+/* Czcionka i marginesy */
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #fffafa;
+    margin: 30px;
+    padding: 10px;
+}
+
+/* Czerwone naglowki */
+h1, h2 {
+    color: #b22222;
+    border-bottom: 2px dashed #b22222;
+}
+
+/* Odstepy sekcji */
+section {
+    margin-bottom: 20px;
+}
+
+/* Ramka zdjecia */
+img {
+    border: 3px dashed #b22222;
+    margin-top: 10px;
+}
+
+/* Kolor linkow */
+a {
+    color: #b22222;
+}
+
+/* Stopka */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #b22222;
+}
