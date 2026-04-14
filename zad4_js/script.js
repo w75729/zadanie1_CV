@@ -1,4 +1,4 @@
-/* Numer indeksu: 75729 | Furkan Akgun */
+// Numer indeksu: 75729 | Furkan Akgun
 
 function zmienMotyw(kolor) {
     const link = document.getElementById('theme-link');
