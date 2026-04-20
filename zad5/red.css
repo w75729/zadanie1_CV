@@ -34,3 +34,30 @@ footer {
     margin-top: 40px;
     color: #b22222;
 }
+
+
+/* Zadanie 5: Style dla formularza i przycisku */
+#contact-form {
+    padding: 10px;
+}
+
+input, textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px;
+    width: 100%;
+}
+
+#submit-button {
+    margin-top: 10px;
+    padding: 8px 20px;
+    background: transparent;
+    border: 2px solid currentColor;
+    color: currentColor;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#submit-button:hover {
+    background-color: rgba(0,0,0,0.05);
+}
