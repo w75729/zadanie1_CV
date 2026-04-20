@@ -79,6 +79,40 @@
                 <li>Aplikacja konsolowa "Bankomat"</li>
             </ul>
         </section>
+
+        <!-- Sekcja kontakt - zad5 -->
+        <section id="sekcja-kontakt" style="margin-top: 30px; border-top: 1px solid currentColor; padding-top: 15px;">
+        <h2>Kontakt</h2>
+        <form id="contact-form">
+            <div style="margin-bottom: 10px;">
+                <label for="imie">Imię:</label><br>
+                <input type="text" id="imie">
+                <div id="imie-error" style="color: red; font-size: 12px;"></div>
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <label for="nazwisko">Nazwisko:</label><br>
+                <input type="text" id="nazwisko">
+                <div id="nazwisko-error" style="color: red; font-size: 12px;"></div>
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <label for="email">E-mail:</label><br>
+                <input type="text" id="email">
+                <div id="email-error" style="color: red; font-size: 12px;"></div>
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <label for="wiadomosc">Wiadomość:</label><br>
+                <textarea id="wiadomosc" rows="4" style="width: 100%; max-width: 300px;"></textarea>
+                <div id="wiadomosc-error" style="color: red; font-size: 12px;"></div>
+            </div>
+
+            <button type="submit" id="submit-button">Wyślij wiadomość</button>
+        </form>
+        <div id="form-success" style="color: green; margin-top: 10px; font-weight: bold;"></div>
+        </section>
+
     </main>
 
     <footer>
