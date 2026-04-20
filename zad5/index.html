@@ -1,0 +1,93 @@
+<!-- Numer indeksu: 75729 | Furkan Akgun -->
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Furkan Akgun - CV</title>
+    <link id="theme-link" rel="stylesheet" href="red.css">
+    
+    <!-- Połączenie favicon.ico -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+    <header>
+        <h1>Furkan Akgün</h1>
+        <img src="profil.jpg" width="150" alt="Moje zdjęcie profilowe">
+    </header>
+
+    <!-- Przyciski do JavaScript -->
+    <div style="margin: 20px 0;">
+            <button onclick="zmienMotyw('red')">Motyw Czerwony</button>
+            <button onclick="zmienMotyw('green')">Motyw Zielony</button>
+            <button onclick="toggleSekcja()">Pokaż/Ukryj Projekty</button>
+    </div>
+
+    <main>
+        <section>
+            <h2>Kontakt</h2>
+            <p>E-mail: <a href="mailto:furkan@hotmail.com">furkan@hotmail.com</a></p>
+            <p>Telefon: <a href="tel:+48111222333">+48 111 222 333</a></p>
+            <p>Miasto: Warszawa</p>
+            <p>Numer indeksu: 75729</p>
+            <p>
+                <a href="https://github.com/w75729" target="_blank" rel="noopener noreferrer">Mój GitHub</a> | 
+                <a href="https://github.com/w75729/zadanie1_CV" target="_blank" rel="noopener noreferrer">Repozytorium projektu</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>O mnie</h2>
+            <p>Jestem studentem pierwszego roku informatyki na uczelni Vistula. Dopiero zaczynam moją przygodę z programowaniem, ale bardzo interesuję się tym, jak działają komputery. Lubię uczyć się nowych rzeczy i poznawać języki obce.</p>
+        </section>
+
+        <section>
+            <h2>Umiejętności</h2>
+            <ul>
+                <li>Podstawy HTML</li>
+                <li>Język angielski (A2/B1)</li>
+                <li>Język turecki (ojczysty)</li>
+                <li>Podstawy C#</li>
+                <li>Obsługa komputera i internetu</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Doświadczenie</h2>
+            <article>
+                <h3>Nauka własna</h3>
+                <p>Od kilku miesięcy uczę się podstaw programowania i tworzenia prostych stron internetowych w domu.</p>
+            </article>
+            <article>
+                <h3>Projekty na uczelni</h3>
+                <p>Wykonywanie prostych zadań i ćwiczeń z informatyki w ramach zajęć laboratoryjnych.</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Edukacja</h2>
+            <p>Akademia Finansów i Biznesu Vistula - Informatyka</p>
+            <p>Rok I, semestr II</p>
+        </section>
+
+        <!-- Sekcja do ukrywania -->
+        <section id="sekcja-projekty">
+            <h2>Projekty</h2>
+            <ul>
+                <li>Prosty kalkulator w języku C#</li>
+                <li>Aplikacja konsolowa "Bankomat"</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>Furkan Akgün | Numer indeksu: 75729 | 2026</p>
+    </footer>
+
+    <!-- Połączenie script.js -->
+    <script src="script.js"></script>
+
+</body>
+</html>
