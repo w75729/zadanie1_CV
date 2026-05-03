@@ -1,0 +1,14 @@
+{
+  "skills": [
+    "Podstawy HTML i CSS",
+    "Język angielski (A2/B1)",
+    "Język turecki (ojczysty)",
+    "Podstawy JavaScript",
+    "Obsługa GitHub"
+  ],
+  "projects": [
+    "Moje interaktywne CV",
+    "Prosty kalkulator w C#",
+    "Aplikacja konsolowa w Visual Studio"
+  ]
+}
