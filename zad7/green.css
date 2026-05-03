@@ -63,3 +63,13 @@ input, textarea {
 #submit-button:hover {
     background-color: rgba(0,0,0,0.05);
 }
+
+
+/* Style dla Zadania 7 */
+#button-dodaj {
+    padding: 5px 15px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid currentColor;
+    color: currentColor;
+}
