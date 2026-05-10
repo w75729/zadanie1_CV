@@ -109,32 +109,65 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-/* Zadanie 7: Local Storage */
+// Zadanie 7: Local Storage
 
 // Ładuje dane przy starcie strony
 document.addEventListener('DOMContentLoaded', wyswietlNotatki);
 
+// Zadanie 8
 function dodajNotatke() {
     const input = document.getElementById('input-notatka');
     const tekst = input.value.trim();
+    const statusInfo = document.getElementById('api-status');
 
     if (tekst === "") {
-        alert("Pole nie może być puste!");
+        alert("Wpisz treść notatki!");
         return;
     }
 
-    // Pobieranie starych danych z localStorage
+    // Zapisywanie lokalne (Zadanie 7)
     let notatki = JSON.parse(localStorage.getItem('moje_notatki')) || [];
-    
-    // Dodawanie nowej notatki
     notatki.push(tekst);
-    
-    // Zapisywanie w formacie JSON string
     localStorage.setItem('moje_notatki', JSON.stringify(notatki));
+
+    // Wysyłanie do bazy danych (Zadanie 8)
+    if (statusInfo) {
+        statusInfo.innerText = "Przesyłanie...";
+        statusInfo.style.color = "blue";
+    }
+
+    const firebaseURL = "https://zadanie-8---75729-default-rtdb.firebaseio.com/notatki.json";
+
+    fetch(firebaseURL, {
+        method: 'POST',
+        body: JSON.stringify({
+            tresc: tekst,
+            indeks: "75729",
+            student: "Furkan Akgun",
+            data: new Date().toLocaleString()
+        }),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            // Zielony komunikat o sukcesie
+            statusInfo.innerText = "Sukces! Notatka zapisana w bazie danych.";
+            statusInfo.style.color = "green";
+        }
+    })
+    .catch(() => {
+        // Obsługa błędu połączenia
+        statusInfo.innerText = "Błąd: Brak połączenia z serwerem.";
+        statusInfo.style.color = "red";
+    });
 
     input.value = "";
     wyswietlNotatki();
 }
+
+
 
 function wyswietlNotatki() {
     const lista = document.getElementById('lista-notatek');
@@ -154,6 +187,8 @@ function wyswietlNotatki() {
         lista.appendChild(li);
     });
 }
+
+
 
 function usunNotatke(index) {
     let notatki = JSON.parse(localStorage.getItem('moje_notatki')) || [];
